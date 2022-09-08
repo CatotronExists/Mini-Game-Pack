@@ -149,7 +149,7 @@ while program == True:
                 game_selected = 2
         else:
             print("Invaild Option\n")
-    while game_selected == 1: # Guessing Game
+    while game_selected == 1 and play_again == True: # Guessing Game
         print("Guessing Game Selected\nLoading...")
         time.sleep(randint(0,2))
         print("\n-----------------------------------------------")
@@ -180,7 +180,8 @@ while program == True:
                     if correct == False:
                         while(guesses_left == 0):
                             guesses_left = False
-                            print("\nYou ran out of guesses! The correct number was "+str(secret_number)+"!\n\nYour guesses were;\n" + numbers_guessed)  
+                            print("\nYou ran out of guesses! The correct number was "+str(secret_number)+"!\n\nYour guesses were;") 
+                            print(numbers_guessed)  
                             play_again = str(input("\nPlay again? (y/n) "))
                             if play_again in vaild_responses:
                                 playagain()
@@ -217,7 +218,7 @@ while program == True:
                     custom_guesses = int(input("Enter Guess Limit\n-->> "))
                     if custom_guesses < gen_range:
                         vaild_range_guess = True
-                        print("\n---------------------------------------------------\nMin: " + str(min_range) + " | Max: " + str(max_range) + "You will have " +str(custom_guesses)+ " guesses!")   
+                        print("\n---------------------------------------------------\nMin: " + str(min_range) + " | Max: " + str(max_range) + " You will have " +str(custom_guesses)+ " guesses!")   
                         hint()
                         play_again = True
                     elif custom_guesses == 0:
@@ -225,7 +226,7 @@ while program == True:
                     elif custom_guesses > gen_range:
                         print("You cant have more guesses than the range!")  
                 
-    while game_selected == 2: # RPS
+    while game_selected == 2 and play_again == True: # RPS
         print("Rock Paper Scissors Selected\nLoading...")
         time.sleep(randint(0,2))
         while play_again == True:
@@ -274,5 +275,4 @@ while program == True:
                         play_again = True
                     elif play_again in no_responses:
                         print("...\n-------------------------------------")
-                        break
                 else:print("Invaild Option")   
