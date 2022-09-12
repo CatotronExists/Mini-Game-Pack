@@ -1,3 +1,2 @@
-# cli-based-Mini-Games
-A collection of Mini-games in cli format
-(Command Line Interface)
+# Case Opening Simulator Branch
+The place where development of Case Opening Simulator will be done before adding to main project
