@@ -1,0 +1,16 @@
+Split or Steal v0.2
+
+[New]
+New Balance System, gain money when you win. - Will soon be used to buy things :O
+Customize the game in config.py 
+    Currently you can change; Starting Balance of both players, Pick who goes first (Or leave it up to chance), The amount of money that can be earned and disable the starting guide 
+Option to play again added
+
+[Changes]
+Starting Guide only shows once (Can be turned off in config.py)
+Fixed some text to be more consistant
+Added missing spacing between words/lines    
+Player responses are now hidden with 999 lines of blank lines (from 99)
+
+[Bug Fixes]
+Fixed a rare bug where the game would crash if both players split
