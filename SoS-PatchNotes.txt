@@ -8,7 +8,7 @@ Option to play again added
 
 [Changes]
 Starting Guide only shows once (Can be turned off in config.py)
-Fixed some text to be more consistant
+Fixed some text to be more consistent
 Added missing spacing between words/lines    
 Player responses are now hidden with 999 lines of blank lines (from 99)
 
