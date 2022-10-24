@@ -42,6 +42,25 @@ def player2():
             print("\n" * 999999)
             vaild = True
         else: invaild()
+
+if config_verify == True: # checks config for invaild options
+    current_check + 1
+    if player1_bal < 0:
+        print(config_options[current_check]+" has an invaild value, check config.py")
+        current_check + 1
+    elif player2_bal < 0: 
+        print(config_options[current_check]+" has an invaild value, check config.py")
+        current_check + 1
+    elif first < 0: 
+        print(config_options[current_check]+" has an invaild value, check config.py")
+        current_check + 1
+    elif reward < 0: 
+        print(config_options[current_check]+" has an invaild value, check config.py")
+        current_check + 1
+    elif starting_guide != False or starting_guide != True: 
+        print(config_options[current_check]+" has an invaild value, check config.py")
+        current_check + 1
+config_verify = False
             
 while play_again == True:
     vaild = False
