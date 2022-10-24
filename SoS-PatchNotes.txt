@@ -1,4 +1,4 @@
-Split or Steal v0.2
+Split or Steal v0.2 (25/10/2022)
 
 [New]
 New Balance System, gain money when you win. - Will soon be used to buy things :O
@@ -14,3 +14,6 @@ Player responses are now hidden with 999 lines of blank lines (from 99)
 
 [Bug Fixes]
 Fixed a rare bug where the game would crash if both players split
+
+v0.1 (10/7/2022)
+- Release
